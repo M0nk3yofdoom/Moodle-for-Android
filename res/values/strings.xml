@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="hello">Hello World, Moodle for Android by YCIS!</string>
+    <string name="app_name">Moodle for Android YCIS</string>
+    
+    <string name="section_default_hdr">Section</string>
+	<string name="standard_list">Standard</string>
+	<string name="empty_list">Empty</string>
+    
+    <string name="login_moodle_hdr">YCIS - Moodle for Android</string>
+    <string name="login_moodle_desc">Please enter Moodle details</string>
+    <string name="login_moodle_hint">Moodle URL</string>
+    <string name="login_url_hint">Site Url</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button">Login</string>
+    
+    
+    <string name="coursework_home_view">Overview</string>
+    <string name="coursework_detail_view">Course Work</string>
+    <string name="coursework_assigndetail_view">Assignments</string>
+    <string name="coursework_forumdetail_view">Forums</string>
+    <string name="coursework_gradedetail_view">Grades</string>
+    <string name="upload_view">Upload File</string>
+    
+    <string name="upload_search_hint">Search files..</string>
+    
+    <string name="courses_view">Courses</string>
+    <string name="settings_view">Settings</string>
+    <string name="upload_btn_view">Upload</string>
+    <string name="select_course">Select Course</string>
+    <string name="deafult_course_name">Unknown</string>
+    
+    <string name="documents_view">Documents</string>
+    <string name="documents_desc_view">Information available online about the course content</string>
+    <string name="assignments_view">Assignments</string>
+    <string name="assignments_desc_view">Download assignment details of deliverables</string>
+    <string name="grades_view">Grades</string>
+    <string name="grades_desc_view">Results from Assignments</string>
+    <string name="forum_view">Forum</string>
+    <string name="forum_desc_view">View Forums Online</string>
+    <string name="offline_view">Offline Files</string>
+    <string name="offline_desc_view">View Downloaded Files</string>
+    
+    <string name="general_discus_view">General Discussion</string>
+    <string name="general_discus_desc_view">Unread Post Count (5)</string>
+    <string name="week_one_view">Week One Topic</string>
+    <string name="week_one_desc_view">Unread Post Count (0)</string>
+    <string name="assign_discus_view">Assignment Discussion</string>
+    <string name="assign_discus_desc_view">Unread Post Count (2)</string>
+    
+    <string name="account_hdr_text">Accounts</string>
+    <string name="account_logout_text">Logout</string>
+    <string name="storage_hdr_text">Storage</string>
+    <string name="default_file_size_hdr_text">Default auto file size download:-</string>
+    <string name="default_file_size_kb_text">Kb</string>
+    <string name="default_download_toggle_hdr_text">Auto download files:-</string>
+    <string name="maximum_download_filesize_hdr_text">Maximum download file size:-</string>    
+    <string name="download_toggle_hdr_text">Download offline files:-</string>
+    
+    <string name="empty_coursework">No Elements for Selected Coursework View</string>
+    <string name="empty_upload">No Files for Upload</string>
+    
+    
+    <string name="spin">Courses</string>
+    
+    <string-array name="course">
+        <item>Course Test</item>
+        <item>Course 2</item>
+        <item>Course 3</item>
+    </string-array>
+    
+    
+    <style name="ButtonText">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_margin">3dp</item>
+		<item name="android:textSize">17dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">2</item>
+	</style>
+	
+    <style name="HeadingText">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_margin">2dp</item>
+		<item name="android:textSize">17dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">2</item>
+		<item name="android:paddingLeft">0dp</item>
+		<item name="android:paddingRight">0dp</item>
+	</style>
+	
+    <style name="FooterText">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_margin">2dp</item>
+		<item name="android:textSize">11dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">2</item>
+		<item name="android:paddingLeft">0dp</item>
+		<item name="android:paddingRight">0dp</item>
+	</style>
+	
+     <style name="MyColorDialogTheme" parent="android:Theme.Dialog">
+		<item name="android:windowBackground">@drawable/color_panel_background</item>
+	</style>
+	
+     <style name="Theme.Transparent" parent="android:Theme"> 
+	    <item name="android:windowIsTranslucent">true</item> 
+	    <item name="android:windowBackground">@color/Transparent</item> 
+	    <item name="android:windowContentOverlay">@null</item> 
+	    <item name="android:windowNoTitle">true</item> 
+	    <item name="android:windowIsFloating">true</item> 
+	    <item name="android:backgroundDimEnabled">false</item> 
+	  </style> 
+     
+    <style name="full_screen_dialog">
+           <item name="android:windowFrame">@null</item>
+           <item name="android:windowIsFloating">true</item>
+           <item name="android:windowContentOverlay">@null</item>
+           <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+           <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+       </style>
+    <string name="database_home_view">Offline Files</string>
+    
+		
+</resources>

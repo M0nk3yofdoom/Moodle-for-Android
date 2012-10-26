@@ -1,0 +1,30 @@
+How to use the Moodle to Android app:
+
+For the best user experience all of these steps should be implemented.
+
+Prerequisites:
+The Moodle site being used must be at least 2.2
+Android devices must support at least Android 2.1
+
+Your website administrator must enable the following services.
+1.	Enable Mobile Web Services:
+This is available at this link from an administrator account:
+http://YOURSITEHERE.COM/admin/search.php?query=enablewebservices
+
+2.	Enable REST protocol:
+This is available at this link from an administrator account:
+http://YOURSITEHERE.COM/admin/settings.php?section=webserviceprotocols
+
+3.	Set up Mobile theme for your Moodle Site:
+This is available at this link from an administrator account:
+http://YOURSITEHERE.COM/theme/index.php?
+Make sure you select the "MyMobile" theme that ships with the default 
+installation. Any other theme targeted for mobile or tablet is also a good choice.
+
+Within the Android App
+4.	Enter Moodle site:
+Users enter the root website address of the Moodle site they are accessing to log 
+in(http:// not required).
+
+5.	Logging in:
+Users enter a username and password combination valid for the site.

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#cfcfcf"  >
+    
+	 <LinearLayout android:id="@+id/hdr_coursework_forumitem_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1" android:background="@drawable/headerbar_shape">
+        <TextView android:id="@+id/coursework_forumhdr_view" android:text="@string/coursework_forumdetail_view" style="@style/HeadingText" />
+    </LinearLayout>
+    
+    <FrameLayout 
+        android:layout_below="@+id/hdr_coursework_forumitem_view" 
+        android:layout_above="@+id/footer_view" 
+        android:id="@+id/forumlistView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical">
+
+
+		<moodle.android.moodle.helpers.SectionListView 
+		    android:id="@+id/forum_section_list_view" 
+		    android:layout_width="fill_parent"                 
+		    android:layout_height="fill_parent"/>
+	 
+	</FrameLayout>
+	
+    <LinearLayout 
+        android:id="@+id/coursework_forumitem_empty" 
+        android:layout_below="@+id/hdr_coursework_forumitem_view" 
+        android:layout_above="@+id/footer_view"        
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"	    
+        android:visibility="invisible">
+        
+	    <TextView    	        
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"     
+	        android:text="@string/empty_coursework"
+	        android:textColor="@color/Black"
+	        android:gravity="center"/>
+    </LinearLayout>
+	
+	<include android:id="@+id/footer_view" layout="@layout/footer_navigation" />
+	
+</RelativeLayout>

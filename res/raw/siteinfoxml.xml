@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RESPONSE>
+    <SINGLE>
+        <KEY name="sitename">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="username">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="firstname">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="lastname">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="fullname">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="userid">
+            <VALUE>int</VALUE>
+        </KEY>
+        <KEY name="siteurl">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="userpictureurl">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="functions">
+            <MULTIPLE>
+                <SINGLE>
+                    <KEY name="name">
+                        <VALUE>string</VALUE>
+                    </KEY>
+                    <KEY name="version">
+                        <VALUE>double</VALUE>
+                    </KEY>
+                </SINGLE>
+				<SINGLE>
+                    <KEY name="name">
+                        <VALUE>string</VALUE>
+                    </KEY>
+                    <KEY name="version">
+                        <VALUE>double</VALUE>
+                    </KEY>
+                </SINGLE>
+				<SINGLE>
+                    <KEY name="name">
+                        <VALUE>string</VALUE>
+                    </KEY>
+                    <KEY name="version">
+                        <VALUE>double</VALUE>
+                    </KEY>
+                </SINGLE>
+            </MULTIPLE>
+        </KEY>
+        <KEY name="downloadfiles">
+            <VALUE>int</VALUE>
+        </KEY>
+    </SINGLE>
+</RESPONSE>

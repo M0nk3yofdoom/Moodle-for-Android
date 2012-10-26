@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+	<!--  ListRow Left sied Thumbnail image -->
+	<LinearLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"		
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg" 
+	    android:layout_marginRight="5dip">
+        
+		<ImageView     
+			android:id="@+id/list_image"   
+	        android:layout_width="50dip"
+	        android:layout_height="50dip"
+	        android:src="@drawable/documents_icon"/>
+        
+	</LinearLayout>
+    
+	<!-- Header Title-->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Documents"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+	<!-- Description Name -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_marginRight="17dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Information available online about the course content" />
+
+	<!-- Rightend Available -->
+    <TextView
+        android:id="@+id/availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/header"
+        android:gravity="right"
+        android:text="(10)"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+      
+     <!-- Rightend Arrow -->    
+     <ImageView android:layout_width="wrap_content"
+        android:id="@+id/rightarrow"
+     	android:layout_height="wrap_content"
+     	android:src="@drawable/arrow"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"/>
+     
+     <!-- Rightend Traffic Light --> 
+     <ImageView
+         android:id="@+id/traffic_image"
+         android:layout_width="20dip"
+         android:layout_height="20dip"
+         android:layout_alignBottom="@+id/thumbnail"
+         android:layout_alignRight="@+id/rightarrow"
+         android:src="@drawable/light_emtpy_icon" />
+
+</RelativeLayout>

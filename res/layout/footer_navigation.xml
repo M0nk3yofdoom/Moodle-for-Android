@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentBottom="true" 
+    android:id="@+id/ftr_menu_view" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:weightSum="3" 
+    android:baselineAligned="true" 
+    android:orientation="vertical" 
+    android:background="@drawable/navbar_shape">            
+
+	    <LinearLayout android:id="@+id/ftr_menu_item_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1" android:background="@drawable/headerbar_shape">
+	        <TextView android:id="@+id/course_ftr_view" android:text="@string/deafult_course_name" style="@style/FooterText" />
+	    </LinearLayout>
+	    
+	    <LinearLayout android:id="@+id/ftr_menu_btn_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2">
+		<Button
+		    android:id="@+id/coursework_home_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="1dp"
+		    android:layout_weight="0.5"
+		    android:background="@android:color/transparent"
+		    android:drawableTop="@drawable/document_button"
+		    android:padding="2dp"
+		    android:text="@string/coursework_home_view"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#ffffff"
+		    android:textSize="10dp"
+		    android:textStyle="bold" />
+		<Button
+		    android:id="@+id/select_course"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="1dp"
+		    android:layout_weight="0.5"
+		    android:background="@android:color/transparent"
+		    android:drawableTop="@drawable/course_button"
+		    android:padding="2dp"
+		    android:text="@string/courses_view"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#ffffff"
+		    android:textSize="10dp"
+		    android:textStyle="bold" />
+
+	    <Button
+	        android:id="@+id/settings_view"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="1dp"
+		    android:layout_weight="0.5"
+	        android:drawableTop="@drawable/setting_button"
+	        android:padding="2dp"
+	        android:text="@string/settings_view"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="#ffffff"
+	        android:textSize="10dp" 
+	        android:textStyle="bold"
+	        android:background="@android:color/transparent" />
+	    
+	    <Button
+		    android:id="@+id/upload_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="1dp"
+		    android:layout_weight="0.5"
+		    android:background="@android:color/transparent"
+		    android:drawableTop="@drawable/upload_button"
+		    android:padding="2dp"
+		    android:text="@string/upload_btn_view"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#ffffff"
+		    android:textSize="10dp"
+		    android:textStyle="bold" />
+	    </LinearLayout>
+
+	</LinearLayout>

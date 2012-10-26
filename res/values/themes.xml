@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="SectionListViewTheme" parent="android:Theme">
+		<item name="sectionListView.sectionTextViewPadding" >2dip</item>
+		<item name="sectionListView.sectionTextViewTextColor" >@android:color/white</item>
+		<item name="sectionListView.sectionTextViewTextSize" >18dip</item>
+		<item name="sectionListView.sectionItemPadding" >2dip</item>
+		<item name="sectionListView.sectionItemBackground" >@drawable/gradient_bg_hover</item>
+		<item name="android:windowNoTitle">true</item> 
+	</style>
+
+</resources>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<RESPONSE>
+    <SINGLE>
+        <KEY name="contextid">
+            <VALUE>int</VALUE>
+        </KEY>
+        <KEY name="component">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="filearea">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="itemid">
+            <VALUE>int</VALUE>
+        </KEY>
+        <KEY name="filepath">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="filename">
+            <VALUE>string</VALUE>
+        </KEY>
+        <KEY name="url">
+            <VALUE>string</VALUE>
+        </KEY>
+    </SINGLE>
+</RESPONSE>

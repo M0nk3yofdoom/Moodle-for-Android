@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#cfcfcf"  >
+
+	<LinearLayout android:id="@+id/hdr_coursework_item_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1" android:background="@drawable/headerbar_shape">
+        <TextView android:id="@+id/coursework_hdr_view" android:text="@string/coursework_home_view" style="@style/HeadingText" />
+    </LinearLayout>
+
+	<RelativeLayout  android:layout_below="@+id/hdr_coursework_item_view" android:layout_above="@+id/footer_view" android:id="@android:id/tabcontent" android:text="@string/coursework_home_view" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+        
+        <ListView
+	        android:id="@+id/course_home_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="#b5b5b5"
+	        android:dividerHeight="1dp"
+	        android:listSelector="@drawable/list_selector" />
+    </RelativeLayout>
+	
+	<include android:id="@+id/footer_view" layout="@layout/footer_navigation" />
+	
+</RelativeLayout>

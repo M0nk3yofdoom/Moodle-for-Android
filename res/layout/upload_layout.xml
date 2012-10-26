@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#cfcfcf"  >
+    
+	 <LinearLayout android:id="@+id/hdr_upload_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1" android:background="@drawable/headerbar_shape">
+        <TextView android:id="@+id/upload_hdr_view" android:text="@string/upload_view" style="@style/HeadingText" />
+    </LinearLayout>
+    
+    <RelativeLayout android:layout_below="@+id/hdr_upload_view" android:layout_above="@+id/footer_view" 
+        android:id="@android:id/tabcontent" android:text="@string/upload_view" android:paddingLeft="0dp" 
+        android:paddingRight="0dp" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+        android:orientation="vertical"
+		android:descendantFocusability="beforeDescendants" 
+		android:focusableInTouchMode="true" >
+        
+	    <!-- Editext for Search -->
+	    <EditText android:id="@+id/uploadInputSearch"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/upload_search_hint"
+	        android:inputType="textVisiblePassword"/> 
+  
+    	<!-- List View -->
+        <ListView
+	        android:id="@+id/upload_file_list"
+	        android:layout_below="@+id/uploadInputSearch"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="#b5b5b5"
+	        android:dividerHeight="1dp"
+	        android:listSelector="@drawable/list_selector">
+            <requestFocus />
+        </ListView>
+        
+        <LinearLayout 
+	        android:id="@+id/upload_item_empty" 
+	        android:layout_below="@+id/uploadInputSearch"  
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"	    
+	        android:visibility="invisible">
+        
+		    <TextView  
+		        android:id="@+id/upload_empty_text"   	        
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"     
+		        android:text="@string/empty_upload"
+		        android:textColor="@color/Black"
+		        android:gravity="center"/>
+	    </LinearLayout>
+    </RelativeLayout>
+	
+	<include android:id="@+id/footer_view" layout="@layout/footer_navigation" />
+	
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentTop="true" 
+    android:id="@+id/hdr_menu_view" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical" 
+    android:weightSum="3" 
+    android:background="@drawable/navbar_shape">
+
+	    <LinearLayout android:id="@+id/hdr_menu_btn_view" android:layout_width="fill_parent" android:gravity="center" android:layout_height="wrap_content" android:weightSum="2">
+		<Button
+		    android:id="@+id/coursework_home_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="1dp"
+		    android:layout_weight="0.5"
+		    android:background="@android:color/transparent"
+		    android:drawableTop="@drawable/document_button"
+		    android:padding="2dp"
+		    android:text="@string/coursework_home_view"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#ffffff"
+		    android:textSize="10dp"
+		    android:textStyle="bold" />
+
+		<Button
+		    android:id="@+id/forum_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="1dp"
+		    android:layout_weight="0.5"
+		    android:background="@android:color/transparent"
+		    android:drawableTop="@drawable/forum_button"
+		    android:padding="2dp"
+		    android:text="@string/forum_view"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#ffffff"
+		    android:textSize="10dp"
+		    android:textStyle="bold" />
+
+		<Button
+		    android:id="@+id/offline_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="1dp"
+		    android:layout_weight="0.5"
+		    android:background="@android:color/transparent"
+		    android:drawableTop="@drawable/offline_button"
+		    android:padding="2dp"
+		    android:text="@string/offline_view"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#ffffff"
+		    android:textSize="10dp"
+		    android:textStyle="bold" />
+		
+		<!-- <Button
+		    android:id="@+id/links_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="1dp"
+		    android:layout_weight="0.5"
+		    android:background="@android:color/transparent"
+		    android:drawableTop="@drawable/offline_button"
+		    android:padding="2dp"
+		    android:text="@string/links_view"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#ffffff"
+		    android:textSize="10dp"
+		    android:textStyle="bold" /> -->
+		</LinearLayout>    
+		
+	   
+
+	</LinearLayout>
